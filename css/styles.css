@@ -1,74 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 @import "reset.css";
 @import "variable.css";
-@import "status-bar.css";
+
+/* components */
+@import "components/status-bar.css";
+
+/*screen*/
+@import "screen/login.css";
+
+
 
 
 body {
     font-family: 'Poppins', sans-serif;
 }
-
-
-.welcom-header {
-    text-align: center;
-    margin: 90px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.welcom-header__title {
-    font-size: 28px;
-    font-weight: 600;
-}
-
-.welcom-header__text {
-    margin-top: 16px;
-    width: 60%;
-    line-height: 140%;
-    color: rgba(0, 0, 0, 0.7);
-}
-
-#login-form {
-    display: flex;
-    flex-direction: column;
-    margin: 0px 30px;
-}
-
-#login-form input {
-    font-size: 20px;
-    padding: 24px 0px;
-    border: none;
-}
-
-#login-form input:not([type="submit"]) {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    transition: border-color 1s ease-in-out;
-}
-
-
-#login-form input::placeholder{
-    color: rgba(0, 0, 0, 0.5);
-}
-
-#login-form input:focus {
-    border-color: var(--main-color);
-}
-
-
-#login-form input[type="submit"] {
-    margin-top: 40px;
-    background-color: var(--main-color);
-    font-weight: 600;
-    cursor: pointer;
-    border-radius: 8px;
-}
-
-#login-form a {
-    text-align: center;
-    margin-top: 16px;
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.7);
-}
-
 
