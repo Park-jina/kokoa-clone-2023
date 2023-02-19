@@ -1,0 +1,111 @@
+.chat-room__bg {
+    background-color: #abc1d1;
+}
+
+.chat-room__vh {
+    height: 200vh;
+}
+
+.chat-room-date {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.chat-room-date__text {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 18px;
+    border-radius: 24px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+
+
+/* reply-form */
+
+
+.reply-form {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    position: fixed;
+    bottom: 0px;
+    padding: 8px 24px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: bottom 0.3s ease-in-out;
+}
+
+.reply-form__column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.reply-form__column:first-child > i {
+    opacity: 0.4;
+    margin-right: 24px;
+}
+
+
+.reply-form__column:last-child {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.reply-form__column input {
+    display: flex;
+    height: 36px;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 28px;
+    border: 1px solid var(--border-color);
+    background-color: #f5f5f5;
+    width: 78vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.reply-form__column:last-child > i, button {
+    position: absolute;
+}
+
+.reply-form__column:last-child button {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--main-color);
+    right: 5px;
+    cursor: pointer;
+}
+
+.reply-form__column:last-child>i {
+    right: 70px;
+    opacity: 0.4;
+}
+
+
+
+.reply-form:focus-within .reply-form__column:first-child,
+.reply-form:focus-within .reply-form__column:last-child i,
+.reply-form:focus-within .reply-form__column:last-child button {
+    opacity: 0;
+}
+
+.reply-form:focus-within input {
+    transform: translateX(-11%) translateY(-80px);
+    width: 86vw;
+}
+
+.reply-form:focus-within {
+    bottom: -80px;
+}
+

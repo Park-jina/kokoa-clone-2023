@@ -1,0 +1,135 @@
+
+.recommended-friends {
+    border-top: 1px solid var( --border-color);
+    color: rgba(0, 0, 0, 0.5);
+    padding: 24px 0px;
+    margin: 32px 0px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.recommended-friends__empty {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    margin: 120px 0px;
+}
+
+.open-chat {
+    color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+}
+
+.open-chat__text {
+    font-size: 14px;
+}
+
+.open-chat__text i {
+    margin-left: 5px;
+}
+
+
+
+/*chat-list-component*/
+
+.chat-list {
+    height: 50vh;
+}
+
+.chat-list-component {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 0px;
+}
+
+.chat-list-component__column {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.chat-list-component_title {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.chat-list-component_hashtag {
+    text-transform: uppercase;
+    opacity: 0.5;
+    margin-bottom: 8px;
+}
+
+.chat-list-component__members {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.chat-list-component__members img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.divider {
+    width: 1px;
+    height: 12px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 0px 6px;
+}
+
+.chat-list-component__members span:last-child {
+    color: rgb(252, 36, 201);
+}
+
+.chat-list-component__thum {
+    width: 110px;
+    height: 110px;
+    border-radius: 20px;
+}
+
+
+.chat-list-component__hearts span {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 12px;
+    padding: 4px 10px;
+    font-size: 14px;
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+}
+
+
+.chat-list-component__hearts i {
+    margin-right: 6px;
+    font-size: 12px;
+    will-change: transform;
+
+}
+
+
+
+.chat-list-component__hearts i:hover { 
+    animation: heart-beat-icon 1s ease-in-out infinite;
+}
+
+
+
+
+@keyframes heart-beat-icon {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: scale(1.5);
+        color: rgb(255, 105, 238);
+    }
+    100% {
+        transform: none;
+    }
+}
+

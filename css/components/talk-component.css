@@ -1,0 +1,89 @@
+.talk-component {
+    display: flex;
+    margin-top: 24px;
+}
+
+.talk-component__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.talk-component__thum {
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    margin-right: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+
+.talk-component__name {
+    font-size: 16px;
+    padding: 8px 0px;
+    opacity: 0.7;
+}
+
+.talk-component__bubble {
+    display: flex;
+}
+
+.talk-component__bubble__text {
+    background-color: white;
+    font-size: 20px;
+    padding: 14px 20px 14px 16px;
+    border-radius: 18px;
+    border-top-left-radius: 0px;
+}
+
+.talk-component__bubble__time {
+    display: flex;
+    align-items: flex-end;
+    font-size: 14px;
+    opacity: 0.7;
+    padding: 2px 0px;
+    margin: 0px 8px;
+}
+
+.talk-component__user {
+    justify-content: flex-end;
+}
+
+.talk-component__user .talk-component__thum {
+    display: none;
+}
+
+.talk-component__user .talk-component__name {
+    display: none; 
+}
+
+.talk-component__user .talk-component__bubble {
+    flex-direction: row-reverse;
+}
+
+.talk-component__user .talk-component__bubble__text {
+    border-top-left-radius: 18px;
+    border-bottom-right-radius: 0px;
+    background-color: var(--main-color);
+}
+
+
+.talk-component {
+    transform: translateY(60px);
+    opacity: 0;
+    animation: talk-component__animation .8s ease-in-out forwards;
+}
+
+
+.talk-component:last-child{
+    animation-delay: 0.5s;
+}
+
+
+@keyframes talk-component__animation {
+
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+

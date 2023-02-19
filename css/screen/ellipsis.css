@@ -1,0 +1,63 @@
+.user-component__column__info i {
+    color: rgb(255, 154, 118);
+    size: 12px;
+}
+
+.user-component__column__icon {
+    font-size: 32px;
+    opacity: 0.5;
+    margin-right: 8px
+}
+
+.screen-icons {
+    margin: 40px 0px;
+}
+
+.screen-icon span {
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+.screen-icons__row2 {
+    display: flex;
+    justify-content: left;
+}
+
+.suggestions__title {
+    display: flex;
+    font-size: 17px;
+    border-top: 1px solid var(--border-color);
+    padding: 30px 0px ;
+}
+
+.suggestions__list {
+    display: flex;
+    align-items: flex-start;
+}
+
+.suggestions__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+.suggestions__item i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    background-color: var(--main-color);
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    color: #fff;
+}
+
+.suggestions__item span {
+    opacity: 0.7;
+}
+
+

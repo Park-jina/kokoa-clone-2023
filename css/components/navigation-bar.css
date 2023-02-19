@@ -1,0 +1,83 @@
+
+@keyframes nav-animation {
+    to {
+        transform: none;
+    }
+}
+
+
+
+
+
+.navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9fa ;
+    padding: 24px 0px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 10;
+    bottom: 0px;
+    width: 100%;
+
+}
+
+.navigation-bar__items {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    color: #2f363e;
+    position: relative;
+
+}
+
+.navigation-bar__items a {
+    position: relative;
+}
+
+.navigation-bar__notice {
+    position: absolute;
+    left: 18px;
+    bottom: 18px;
+}
+
+.navigation-bar__items-active {
+    color: #ff8800;
+}
+
+.navigation-bar__items div {
+    position: relative;
+}
+
+.badge-dot {
+    position: absolute;
+    left: 38px;
+    bottom: 2px;
+}
+
+
+.navigation-bar__items .badge {
+    animation: badge-motion 1s ease-in-out infinite;
+}
+
+
+.navigation-bar__items{
+    transform: translateY(80px);
+    animation: nav-animation 1s ease-in-out forwards;
+}
+
+.navigation-bar__items:nth-child(2) {
+    animation-delay: 0.3s;
+} 
+
+
+.navigation-bar__items:nth-child(3) {
+    animation-delay: 0.6s;
+} 
+
+.navigation-bar__items:last-child {
+    animation-delay: 0.9s;
+} 
+
+

@@ -1,0 +1,48 @@
+.badge {
+    background-color: rgba(254, 85, 18, 0.888);
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge-dot {
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: rgba(254, 85, 18, 0.888);
+    border-radius: 50%;
+}
+
+
+.settings-list__badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-color: rgba(254, 85, 18, 0.888);
+    color: white;
+    font-size: 14px;
+    border-radius: 50%;
+}
+
+
+
+@keyframes badge-motion {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+
+

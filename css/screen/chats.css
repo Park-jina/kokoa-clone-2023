@@ -1,0 +1,11 @@
+
+.user-component__column__right span:nth-child(2){
+    position: relative;
+    left: 14px;
+    margin-top: 8px; 
+}
+
+.user-component__column__thum img {
+    width: 70px;
+    height: 70px;
+}

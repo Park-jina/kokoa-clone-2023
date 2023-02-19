@@ -1,0 +1,40 @@
+
+.user-component {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-component__column__thum {
+    display: flex;
+    align-items: center;
+}
+
+.user-component__column__thum img {
+    width: 70px;
+    height: 70px;
+    border-radius: 30px;
+}
+
+.user-component__column__info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+}
+
+.user-component__column__info span:first-child {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.user-component__column__info span:nth-child(2)  {
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+.user-component__column__right {
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 4px;
+}

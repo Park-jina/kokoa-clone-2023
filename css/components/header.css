@@ -1,0 +1,28 @@
+
+.kokoa-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 600;
+    padding: 30px 20px;
+    margin-top: 20px;
+}
+
+.kokoa-header__column:last-child span {
+    margin-left: 20px;
+}
+
+
+.kokoa-header .kokoa-header__column
+.fa-cog:hover {
+    transform: rotateZ(360deg);
+}
+
+.kokoa-header .kokoa-header__column
+.fa-cog {
+    transition: all 2s ease-in-out;
+    will-change: all;
+}
+
+
